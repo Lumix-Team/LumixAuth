@@ -9,7 +9,6 @@ import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
-import com.alessiodp.libby.classloader.IsolatedClassLoader;
 import com.bivashy.auth.api.AuthPlugin;
 import com.bivashy.auth.api.AuthPluginProvider;
 import com.bivashy.auth.api.account.AccountFactory;
@@ -157,7 +156,7 @@ public class BaseAuthPlugin implements AuthPlugin {
         this.accountFactory = new AuthAccountFactory();
         this.linkTypeProvider = BaseLinkTypeProvider.allLinks();
         // TODO: Replace this with IsolatedDatabaseHelperFactory
-        this.accountDatabase = new AuthAccountDatabaseProxy(new DatabaseHelper(this, new IsolatedClassLoader()));
+        this.accountDatabase = new AuthAccountDatabaseProxy(new DatabaseHelper(this, BaseAuthPlugin.class.getClassLoader()));
         this.loginManagement = new BaseLoginManagement(this);
 
         this.registerAuthenticationSteps();

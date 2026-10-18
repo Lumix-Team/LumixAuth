@@ -1,8 +1,8 @@
-name: mcAuth
+name: LumixAuth
 main: me.mastercapexd.auth.bungee.BungeeAuthPluginBootstrap
 version: ${project.version}
 softDepends:
   - VK-API
   - JavaTelegramBotApi
   - NanoLimboBungee
-author: bivashy, MasterCapeXD
+author: LumixTeams

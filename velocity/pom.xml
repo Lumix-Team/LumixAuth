@@ -16,8 +16,8 @@
 
     <repositories>
         <repository>
-            <id>maven-snapshots</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+            <id>alessiodp-snapshots</id>
+            <url>https://repo.alessiodp.com/snapshots/</url>
         </repository>
 
         <repository>
@@ -54,8 +54,8 @@
 
         <!-- VK API -->
         <dependency>
-            <groupId>com.github.bivashy</groupId>
-            <artifactId>VK-API-PluginAdapter</artifactId>
+            <groupId>com.ubivashka</groupId>
+            <artifactId>vk-api.velocity</artifactId>
             <scope>provided</scope>
         </dependency>
 
@@ -64,6 +64,18 @@
             <groupId>com.github.pengrad</groupId>
             <artifactId>java-telegram-bot-api</artifactId>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- Adventure Platform API (AudienceProvider), Velocity does not bundle it -->
+        <dependency>
+            <groupId>net.kyori</groupId>
+            <artifactId>adventure-platform-api</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>net.kyori</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Velocity API -->

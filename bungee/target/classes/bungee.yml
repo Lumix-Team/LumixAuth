@@ -1,0 +1,8 @@
+name: LumixAuth
+main: me.mastercapexd.auth.bungee.BungeeAuthPluginBootstrap
+version: 1.8.0-beta.2
+softDepends:
+  - VK-API
+  - JavaTelegramBotApi
+  - NanoLimboBungee
+author: LumixTeams

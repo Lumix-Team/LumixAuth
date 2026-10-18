@@ -241,13 +241,13 @@ messages:
   # MINIMESSAGE      - Формат MiniMessage (https://docs.adventure.kyori.net/minimessage/format.html)
   deserializer: LEGACY_AMPERSAND
   # Регистрация
-  register-chat: '&fПожалуйста зарегистрируйтесь командой &e/register <пароль>'
+  register-chat: '&fЧтобы зарегистрироваться введите: &e/register <пароль> <пароль>'
   register-title: '&eРегистрация'
-  register-subtitle: '&fПожалуйста введите &e/register <пароль>'
+  register-subtitle: '&fВведите &e/register <пароль> <пароль>'
   # Логин
-  login-chat: '&fПожалуйста войдите используя команду &e/login <password>'
+  login-chat: '&fЧтобы войти введите: &e/login <пароль>'
   login-title: '&eАвторизация'
-  login-subtitle: '&fПожалуйста введите &e/login <пароль>'
+  login-subtitle: '&fВведите &e/login <пароль>'
   # Ошибки
   time-left: '&cВремя вышло! Пожалуйста, попробуйте снова.'
   limit-ip-reached: '&cВы находитесь онлайн с большим количеством аккаунтов!'
@@ -268,13 +268,13 @@ messages:
   wrong-old-password: '&cНеверный пароль!'
   nothing-to-change: '&cВаши пароли совпдают.'
   change-success: '&aВаш пароль был изменён.'
-  confirm-password: '&cПожалуйста подтвердите ваш пароль.'
-  confirm-failed: '&cПароли разные!'
+  confirm-password: '&cВведите пароль дважды: &e/register <пароль> <пароль>'
+  confirm-failed: '&cПароли не совпадают, попробуйте ещё раз!'
   password-too-short: '&cВаш пароль слишком короткий!'
   password-too-long: '&cВаш пароль слишком длинный!'
   wrong-password: '&cНеверный пароль. У вас осталось ещё %attempts% попыток.'
-  register-success: '&aРегистрация прошла успешно.'
-  login-success: '&aВы успешно авторизовались.'
+  register-success: '&aАккаунт создан, добро пожаловать!'
+  login-success: '&aДобро пожаловать на сервер!'
   logout-success: '&aВы вышли из аккаунта'
   # ВК
   vk:
@@ -358,8 +358,8 @@ messages:
   info-version: '&fВерсия: &e%version%'
   # Шаги авторизации 
   authentication-step-usage:
-    REGISTER: '&cВы должны зарегистрироваться используя команду /register [ваш-пароль]'
-    LOGIN: '&cВы должны авторизоваться используя команду /login [ваш-пароль]'
+    REGISTER: '&cЗарегистрируйтесь командой: /register <пароль> <пароль>'
+    LOGIN: '&cАвторизуйтесь командой: /login <пароль>'
     VK_LINK: '&cПодтвердите вход через ВК нажав на кнопку Принять или написав /принять'
     GOOGLE_LINK: '&cВведите ваш гугл код через /google code [ваш код]'
   # Админ команды

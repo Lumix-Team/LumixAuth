@@ -34,14 +34,20 @@ public enum BaseComponentDeserializer implements ComponentDeserializer {
             return new BaseAdventureServerComponent(serializer.deserialize(text));
         }
     }, LEGACY_AMPERSAND {
-        private final LegacyComponentSerializer serializer = LegacyComponentSerializer.legacyAmpersand().toBuilder().hexColors().build();
+        private final LegacyComponentSerializer serializer = LegacyComponentSerializer.builder()
+                .character(LegacyComponentSerializer.AMPERSAND_CHAR)
+                .hexColors()
+                .build();
 
         @Override
         public ServerComponent deserialize(String text) {
             return new BaseAdventureServerComponent(serializer.deserialize(text));
         }
     }, LEGACY_SECTION {
-        private final LegacyComponentSerializer serializer = LegacyComponentSerializer.legacySection().toBuilder().hexColors().build();
+        private final LegacyComponentSerializer serializer = LegacyComponentSerializer.builder()
+                .character(LegacyComponentSerializer.SECTION_CHAR)
+                .hexColors()
+                .build();
 
         @Override
         public ServerComponent deserialize(String text) {

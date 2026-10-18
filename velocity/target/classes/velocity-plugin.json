@@ -1,0 +1,23 @@
+{
+  "id": "lumixauth",
+  "name": "LumixAuth",
+  "version": "1.8.0-beta.2",
+  "authors": [
+    "LumixTeams"
+  ],
+  "dependencies": [
+    {
+      "id": "vk-api",
+      "optional": true
+    },
+    {
+      "id": "telegram-bot-api",
+      "optional": true
+    },
+    {
+      "id": "nanolimbovelocity",
+      "optional": true
+    }
+  ],
+  "main": "me.mastercapexd.auth.velocity.VelocityAuthPluginBootstrap"
+}

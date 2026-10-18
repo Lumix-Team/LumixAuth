@@ -1,9 +1,9 @@
 {
-  "id": "mcauth",
-  "name": "McAuth",
+  "id": "lumixauth",
+  "name": "LumixAuth",
   "version": "${project.version}",
   "authors": [
-    "bivashy"
+    "LumixTeams"
   ],
   "dependencies": [
     {

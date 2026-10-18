@@ -76,8 +76,8 @@
 
         <!-- VK API -->
         <dependency>
-            <groupId>com.github.bivashy</groupId>
-            <artifactId>VK-API-PluginAdapter</artifactId>
+            <groupId>com.ubivashka</groupId>
+            <artifactId>vk-api.core</artifactId>
             <scope>provided</scope>
         </dependency>
 

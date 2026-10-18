@@ -63,7 +63,7 @@ public class VelocityServerTitle extends ServerTitle {
     @Override
     public ServerTitle send(ServerPlayer... players) {
         Title createdTitle = Title.title(titleComponent, subTitleComponent,
-                Title.Times.of(Duration.ofMillis(fadeIn), Duration.ofMillis(stay), Duration.ofMillis(fadeOut)));
+                Title.Times.times(Duration.ofMillis(fadeIn), Duration.ofMillis(stay), Duration.ofMillis(fadeOut)));
         for (ServerPlayer player : players)
             player.as(VelocityServerPlayer.class).getPlayer().showTitle(createdTitle);
         return this;

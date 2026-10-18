@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>main</artifactId>
+    <groupId>me.mastercapexd.auth</groupId>
+    <version>1.8.0-beta.2</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>core</artifactId>
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>com.ubivashka</groupId>
+      <artifactId>vk-api.core</artifactId>
+      <version>0.4.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.pengrad</groupId>
+      <artifactId>java-telegram-bot-api</artifactId>
+      <version>6.9.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.dv8tion</groupId>
+      <artifactId>JDA</artifactId>
+      <version>5.0.0-beta.24</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.bivashy.NanoLimboPlugin</groupId>
+      <artifactId>api</artifactId>
+      <version>1.0.8</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>
