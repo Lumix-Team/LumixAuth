@@ -17,12 +17,6 @@
 
 ## Documentation
 
-<div style="text-align: center;">
-
-[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](https://bivashy.gitbook.io/mcauth/)
-
-</div>
-
 ## License
 
 Released under [EPL-2.0 license](/LICENSE).
