@@ -8,6 +8,7 @@
 ## Platforms
 - [X] **BungeeCord**
 - [X] **Velocity**
+- [ ] **neoforge** (soon)
 - [ ] Spigot
 
 ## Requirements
